@@ -1,10 +1,13 @@
 import './App.css'
+import NavBar from './components/NavBar/NavBar'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
 function App() {
 
   return (
     <>
-      <h1>Hola Mundo</h1>
+      <NavBar></NavBar>
+      <ItemListContainer text="Conozca nuestros mejores productos!"/>
     </>
   )
 }
