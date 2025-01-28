@@ -6,3 +6,48 @@
 .item__title {
     text-align: center;
 }
+.vinos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.vinos__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 200px;
+    background-color: #050f22;
+    padding: 12px 5px;
+    
+    border: 2px solid #2e3d5c;
+    border-radius: 12px;
+}
+.vinos__card img {
+    width: 140px;
+}
+.vinos__card h2 {
+    margin: 10px 0 6px;
+    font-size: 18px;
+}
+.vinos__card p {
+    margin: 5px;
+    font-size: 14px;
+}
+.button__verMas {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #151c2b;
+    color: #E2EDFC;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 150ms;
+}
+.button__verMas:hover {
+    background-color: #112041;
+}

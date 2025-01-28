@@ -1,0 +1,18 @@
+.vino__detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 550px;
+    background-color: #050f22;
+    padding: 10px 10px 0;
+    margin-bottom: 24px;
+    
+    border: 2px solid #2e3d5c;
+    border-radius: 12px;
+}
+.vino__detail img {
+    width: 85%;
+    border-radius: 5px;
+    margin-top: 10px;
+}

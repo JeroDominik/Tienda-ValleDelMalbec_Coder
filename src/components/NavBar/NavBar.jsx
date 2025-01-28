@@ -1,8 +1,6 @@
 import "./NavBar.css"
 import CartWidget from "./CartWidget/CartWidget"
 
-// Buenas Profe! Tanto a la Imagen del Logo Valle del Malbec como a CartWidget, les pase su width en su archivo de svg cada uno,
-// por eso de momento no he usado una className para darle estilos.
 
 const NavBar = () => {
   return (
