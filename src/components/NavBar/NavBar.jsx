@@ -9,13 +9,10 @@ const NavBar = () => {
             <img src="./LogoValleDelMalbec.svg" alt="Imagen Logo Valle del Malbec"/>
             <ul className="nav__links">
                 <li>
-                    <a href="">Nuestra Bodega</a>
+                    <a href="/">Vinos</a>
                 </li>
                 <li>
-                    <a href="">Vinos</a>
-                </li>
-                <li>
-                    <a href="">Contacto</a>
+                    <a href="">Nosotros</a>
                 </li>
             </ul>
             <CartWidget/>

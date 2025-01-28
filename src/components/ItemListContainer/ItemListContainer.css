@@ -37,16 +37,19 @@
     font-size: 14px;
 }
 .button__verMas {
-    font-size: 14px;
-    font-weight: 700;
     padding: 10px 12px;
     border: none;
     border-radius: 10px;
     background-color: #151c2b;
-    color: #E2EDFC;
     font-weight: 700;
     cursor: pointer;
     transition: 150ms;
+}
+.button__verMas a {
+    text-decoration: none;
+    color: #E2EDFC;
+    font-size: 14px;
+    font-weight: 700;
 }
 .button__verMas:hover {
     background-color: #112041;

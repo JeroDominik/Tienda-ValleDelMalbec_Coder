@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "../ItemListContainer/ItemListContainer.css"
 
 const Vino = ( {vino} ) => {
@@ -7,7 +8,11 @@ const Vino = ( {vino} ) => {
             <h2>{vino.nombre}</h2>
             <p>{vino.descripcion}</p>
             <p>${vino.precio}</p>
-            <button className="button__verMas">Ver Más</button>
+            <button className="button__verMas">
+                <Link to={`vino/${vino.id}`}>
+                    Ver Más
+                </Link>
+            </button>
         </li>
     )
 }
