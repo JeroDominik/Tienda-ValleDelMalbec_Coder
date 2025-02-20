@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     margin: 0 15px;
 }
 .nav__links {
@@ -11,8 +11,10 @@
     padding: 0;
 }
 .nav__links a {
-    color: rgb(226, 237, 252);
-    font-size: 22px;
+    color: #bd9f83;
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .nav__title {
     text-align: center;

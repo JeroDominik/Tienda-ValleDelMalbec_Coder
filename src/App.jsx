@@ -1,7 +1,7 @@
 import './App.css'
 import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-import VinoDetail from './components/VinoDetail/VinoDetail'
+import ItemDetail from './components/ItemDetail/ItemDetail'
 import {BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <NavBar/>
         <Routes>
           <Route exact path='/' element={<ItemListContainer/>}/>
-          <Route exact path='/vino/:id' element={<VinoDetail/>}/>
+          <Route exact path='/vino/:id' element={<ItemDetail/>}/>
         </Routes>
       </BrowserRouter>
     </>

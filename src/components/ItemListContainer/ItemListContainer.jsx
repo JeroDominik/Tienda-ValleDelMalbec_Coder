@@ -1,19 +1,27 @@
 import "./ItemListContainer.css"
-import Vino from "../VinoCard/Vino"
+import Vino from "./VinoCard/Vino"
 import { useEffect, useState } from "react"
+import { db } from "../../services/config"
+import { collection, getDocs, query } from "firebase/firestore"
 
 
 const ItemListContainer = () => {
   const [vinos, setVinos] = useState([])
 
-  useEffect(() => {
-    const getData = async() => {
-      const response = await fetch("/data/data.json")
-      const data = await response.json()
-      setVinos(data)
-    }
-    getData()
-  }, [] )
+  useEffect(()=>{
+    const coleccionVinos = query(collection(db,"vinosVdM"))
+
+    getDocs(coleccionVinos)
+      .then(res => {
+        const vinosSeleccionados = res.docs.map(doc => {
+          const data= doc.data()
+          return {id: doc.id, ...data}
+        })
+        setVinos(vinosSeleccionados)
+      })
+      .catch(error => console.log(error))
+  },[])
+
 
   return (
     <main className="contenedor">
