@@ -25,6 +25,7 @@ const VinoDetail = () => {
       <h2>{vino.nombre}</h2>
       <p>{vino.descripcion}</p>
       <img src={vino.img} alt={vino.nombre}/>
+      <p>{`El Precio es de: $${vino.precio}`}</p>
     </section>
   )
 }
