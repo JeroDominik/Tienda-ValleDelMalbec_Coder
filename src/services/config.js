@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app"
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCoWtRbsKi_t6SULYI480HKnCx8EgOYSSU",
+  apiKey: import.meta.env.VITE_FIREBASE_APIKEY,
   authDomain: "valledelmalbec-react.firebaseapp.com",
   projectId: "valledelmalbec-react",
   storageBucket: "valledelmalbec-react.firebasestorage.app",

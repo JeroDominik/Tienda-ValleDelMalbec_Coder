@@ -16,7 +16,6 @@ const Checkout = () => {
 
     const manejadorFormulario = (event) =>{
         event.preventDefault()
-
         if(!nombre || !apellido || !telefono || !email || !emailConfirmacion){
             setError("Por favor complete todos los campos")
             return
@@ -27,7 +26,6 @@ const Checkout = () => {
             return
         }
 
-        //1) Creamos un objeto con todos los datos de la orden de compra
         const orden = {
             items: carrito.map(producto => ({
                 id: producto.item.id,
@@ -42,7 +40,6 @@ const Checkout = () => {
             email
         };
 
-        //2) Guardar la orden en la base de datos
         addDoc(collection(db, "ordenes"), orden)
             .then(docRef =>{
                 setOrdenId(docRef.id)
@@ -55,8 +52,7 @@ const Checkout = () => {
         
     }
 
-
-
+    
   return (
     <div>
         <h2>Checkout Final</h2>
