@@ -7,13 +7,15 @@ const NavBar = () => {
   return (
     <header>
         <nav className="navbar">
-            <img src="./LogoValleDelMalbec.svg" alt="Imagen Logo Valle del Malbec"/>
+            <Link to="/">
+                <img src="./LogoValleDelMalbec.svg" alt="Imagen Logo Valle del Malbec"/>
+            </Link>
             <ul className="nav__links">
                 <li>
-                    <Link to="/">Vinos</Link>
+                    <Link to="/">Tintos</Link>
                 </li>
                 <li>
-                    <Link to="/">Nosotros</Link>
+                    <Link to="/">Blancos</Link>
                 </li>
             </ul>
             <CartWidget/>
