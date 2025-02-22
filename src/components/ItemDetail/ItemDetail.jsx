@@ -31,7 +31,7 @@ const ItemDetail = () => {
     const sumarCantidad = () => { 
       setCantidad(cantidad + 1);  
     }
-    
+
     const restarCantidad = () => {
       if (cantidad > 1) {
         setCantidad(cantidad - 1);
@@ -42,7 +42,7 @@ const ItemDetail = () => {
       setCantidad(cantidad)
       setCantidadElegida(true)
       
-      const item = {id, nombre: vino.nombre, precio: vino.precio}
+      const item = {id, nombre: vino.nombre, precio: vino.precio, img:vino.img}
       agregarAlCarrito(item,cantidad)
     }
 

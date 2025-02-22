@@ -10,19 +10,19 @@ const NavBar = () => {
             <Link to="/">
                 <img src="./LogoValleDelMalbec.svg" alt="Imagen Logo Valle del Malbec"/>
             </Link>
-            <ul className="nav__links">
-                <li>
-                    <Link to="/">Tintos</Link>
-                </li>
-                <li>
-                    <Link to="/">Blancos</Link>
-                </li>
-            </ul>
+            <h1 className="nav__title">
+                Tienda Valle del Malbec
+            </h1>
             <CartWidget/>
         </nav>
-        <h1 className="nav__title">
-            Tienda Valle del Malbec
-        </h1>
+        <ul className="nav__links">
+            <li>
+                <Link to="/">Tintos</Link>
+            </li>
+            <li>
+                <Link to="/">Blancos</Link>
+            </li>
+        </ul>
     </header>
   )
 }

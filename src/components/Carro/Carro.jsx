@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { CarritoContext } from "../../context/CarritoContext";
 import { Link } from "react-router-dom";
+import "./Carro.css"
 
 const Carro = () => {
 
@@ -19,18 +20,20 @@ const Carro = () => {
         <div>
             {
                 carrito.map(vino => 
-                    <div key={vino.item.id}>
-                        <h4>{vino.item.nombre}</h4>
-                        <p>Cantidad : {vino.cantidad}</p>
-                        <p>Precio: {vino.item.precio}</p>
-                        <button onClick={()=>eliminarProducto(vino.item.id)}> Eliminar</button>
+                    <div className="vino__carro" key={vino.item.id}>
+                        <div className="vino__carro__info">
+                            <h4>{vino.item.nombre}</h4>
+                            <p>Cantidad : {vino.cantidad}</p>
+                            <p>Precio: {vino.item.precio}</p>
+                        </div>
+                        <img src={vino.item.img} alt={vino.item.nombre}/>
+                        <button className="buttons__carro" onClick={()=>eliminarProducto(vino.item.id)}> Eliminar</button>
                     </div>
                 )
             }
-                <h3>Total: ${total}</h3>
-                <h3>Cantidad total: {cantidadTotal}</h3>
-                <button onClick={()=> vaciarCarrito()}> Vaciar Carrito</button>
-                <Link to="/checkout"> Finalizar Compra</Link>
+                <h3 className="title__total">Total Carrito: ${total}</h3>
+                <button className="buttons__carro" onClick={()=> vaciarCarrito()}> Vaciar Carrito</button>
+                <Link className="buttons__carro ancore" to="/checkout"> Finalizar Compra</Link>
         </div>
       )
 }

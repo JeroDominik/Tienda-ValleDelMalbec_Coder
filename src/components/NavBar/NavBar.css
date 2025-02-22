@@ -2,21 +2,23 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 0 15px;
+    margin: 0 15px 40px;
 }
 .nav__links {
     display: flex;
+    justify-content: center;
     gap: 20px;
     list-style: none;
     padding: 0;
-}
-.nav__links a {
-    color: #bd9f83;
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 700;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav__links a {
+    color: #d8d7d6;
 }
 .nav__title {
     text-align: center;
     margin: 40px 0 0;
+    color: #bd9f83;
 }
