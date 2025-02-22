@@ -57,12 +57,12 @@ const ItemDetail = () => {
         cantidadElegida
         ? <Link to="/carro">Terminar Compra</Link>
         : <>
-            <div>
-              <button onClick={restarCantidad}> - </button>
+            <div className="contador">
+              <button className="buttons__contador" onClick={restarCantidad}> - </button>
               <strong> {cantidad} </strong>
-              <button onClick={sumarCantidad}> + </button>
+              <button className="buttons__contador" onClick={sumarCantidad}> + </button>
             </div>
-            <button onClick={()=> manejadorCantidad(cantidad)}> Agregar al Carrito </button>
+            <button className="button__agregar" onClick={()=> manejadorCantidad(cantidad)}> Agregar al Carrito </button>
           </>
       }
     </section>

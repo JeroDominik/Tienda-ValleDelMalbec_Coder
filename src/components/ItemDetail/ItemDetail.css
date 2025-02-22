@@ -16,3 +16,27 @@
     border-radius: 5px;
     margin-top: 10px;
 }
+.contador {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.buttons__contador, .button__agregar {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #131822;
+    color: #E2EDFC;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 150ms;
+}
+.button__agregar {
+    padding: 14px 8px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.buttons__contador:hover, .button__agregar:hover {
+    background-color: #161e2c;
+}
